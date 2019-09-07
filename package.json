@@ -1,0 +1,42 @@
+{
+  "name": "musejs",
+  "version": "1.0.0",
+  "description": "js library",
+  "main": "dist/muse.js",
+  "scripts": {
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js && npm run bundle",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "bundle": "webpack",
+    "dev": "webpack --progress --colors --watch"
+  },
+  "author": "maoxiaoke@outlook.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.3.0",
+    "eslint-loader": "^3.0.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "jest": "^24.9.0",
+    "standard": "^14.1.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "typings": "dist/index.d.ts"
+}
