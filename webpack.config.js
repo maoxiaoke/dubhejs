@@ -5,7 +5,7 @@ module.exports = {
   mode: 'none',
   entry: './src/index.ts',
   output: {
-    filename: 'muse.js',
+    filename: 'dubhe.js',
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd'
   },

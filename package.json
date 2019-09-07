@@ -1,8 +1,8 @@
 {
-  "name": "musejs",
+  "name": "dubhejs",
   "version": "1.0.0",
   "description": "js library",
-  "main": "dist/muse.js",
+  "main": "dist/dubhe.js",
   "scripts": {
     "test": "jest",
     "type-check": "tsc --noEmit",
