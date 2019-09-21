@@ -1,5 +1,5 @@
 /*
-* Common types for plain object
+* Common types for dubhejs
 */
 
 export interface PlainObject {
