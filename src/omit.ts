@@ -16,7 +16,7 @@ import { PlainObject } from './types'
 
 function omit <T extends PlainObject, K extends keyof T> (names: K[], obj: T): Omit<T, K> {
   const result = {} as any
-  Object.keys(obj).forEach(props => {
+  Object.getOwnPropertyNames(obj).forEach(props => {
     if (!names.includes(props as K)) {
       result[props] = obj[props]
     }

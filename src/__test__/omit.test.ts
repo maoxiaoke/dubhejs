@@ -28,5 +28,9 @@ test('omit-normal', () => {
 })
 
 test('omit-me', () => {
-  expect(omit(['name'], me)).toStrictEqual({})
+  expect(omit(['name'], me)).toStrictEqual({ age: 18 })
+})
+
+test('omit-me2', () => {
+  expect(omit(['name', 'age'], me)).toStrictEqual({})
 })
