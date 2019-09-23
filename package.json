@@ -1,6 +1,6 @@
 {
   "name": "dubhejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "js library",
   "main": "dist/dubhe.js",
   "scripts": {
